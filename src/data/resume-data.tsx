@@ -8,31 +8,22 @@ export const RESUME_DATA: ResumeData = {
   about: "Опытный менеджер с более чем 5-летним опытом в управлении продажах и развитии бизнеса.",
   summary: (
     <>
-      Full Stack Engineer specializing in high-performance React applications,
-      scalable Node.js services, and real-time collaboration systems.
-      Experienced in technical architecture design and remote team leadership.
+      Менеджер #1 YouTube подкаста про Крипту, продажи продуктов, общение и приглашение с лучшими гостями.
+      Управлял магазином кальянов в Москве, увеличил оборот с 350 тыс. руб. до 900 тыс. руб. за 3 месяца и поднял рейтинг на Yandex Картах до 5.0. 
+      Создал магазин на Ozon, снимал рилсы и вел Instagram. Был продюсером шоу на YouTube в [tuk.md](http://tuk.md/), разработал проект, выиграл грант и выпустил 13 эпизодов. 
+      Как менеджер коммерческого отдела в Еврейском культурном центре, организовал 8 коммерческих мероприятий, открыл 3 образовательных студий, внедрил систему управления на Notion, снимал и создавал посты для продвижения.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
+  avatarUrl: "https://avatars.githubusercontent.com/u/98087190?s=400&u=0fd5cc113146cf9090cabbd21952ac6c64d8df7d&v=4",
   personalWebsiteUrl: "https://jarocki.me",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "kirill.cholak@gmail.com",
+    tel: "+79500031429",
     social: [
       {
-        name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
-        icon: "github",
-      },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
-        icon: "linkedin",
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: "x",
+        name: "Telegram",
+        url: "https://t.me/kirillcholak",
+        icon: "telegram",
       },
     ],
   },
