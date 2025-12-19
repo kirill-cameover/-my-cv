@@ -1,9 +1,12 @@
+"use client";
+
 import React from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
-import type { RESUME_DATA } from "@/data/resume-data";
+import { useTranslations } from "@/i18n/useTranslations";
+import type { ResumeData } from "@/lib/types";
 
-type Education = (typeof RESUME_DATA)["education"][number];
+type Education = ResumeData["education"][number];
 
 interface EducationPeriodProps {
   start: Education["start"];
@@ -68,10 +71,12 @@ interface EducationListProps {
  * Renders a list of education experiences
  */
 export function Education({ education }: EducationListProps) {
+  const t = useTranslations();
+
   return (
     <Section>
       <h2 className="text-xl font-bold" id="education-section">
-        Education
+        {t.sections.education}
       </h2>
       <div
         className="space-y-4"

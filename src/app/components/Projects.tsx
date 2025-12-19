@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Badge } from "../../components/ui/badge";
 import {
@@ -8,7 +10,8 @@ import {
   CardTitle,
 } from "../../components/ui/card";
 import { Section } from "../../components/ui/section";
-import type { RESUME_DATA } from "../../data/resume-data";
+import { useTranslations } from "@/i18n/useTranslations";
+import type { ResumeData } from "@/lib/types";
 
 type ProjectTags = readonly string[];
 
@@ -124,7 +127,7 @@ function ProjectCard({
 }
 
 interface ProjectsProps {
-  projects: (typeof RESUME_DATA)["projects"];
+  projects: ResumeData["projects"];
 }
 
 /**
@@ -133,10 +136,12 @@ interface ProjectsProps {
 export function Projects({
   projects,
 }: ProjectsProps) {
+  const t = useTranslations();
+
   return (
     <Section className="scroll-mb-16 print:space-y-4">
       <h2 className="text-xl font-bold" id="side-projects">
-        Side projects
+        {t.sections.projects}
       </h2>
       <div
         className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2"

@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import type React from "react";
 import { ErrorBoundary } from "@/components/error-boundary";
+import { LanguageProvider } from "@/i18n/LanguageProvider";
 import { RESUME_DATA } from "@/data/resume-data";
 
 const inter = Inter({
@@ -84,9 +85,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="ru" className={inter.className}>
       <body>
-        <ErrorBoundary>{children}</ErrorBoundary>
+        <ErrorBoundary>
+          <LanguageProvider>{children}</LanguageProvider>
+        </ErrorBoundary>
       </body>
       <Analytics />
     </html>

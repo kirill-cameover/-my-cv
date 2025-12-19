@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Section } from "@/components/ui/section";
+import { useTranslations } from "@/i18n/useTranslations";
 import { cn } from "@/lib/utils";
 
 type Skills = readonly string[];
@@ -40,12 +43,14 @@ interface SkillsProps {
  * Displays a list of professional skills as badges
  */
 export function Skills({ skills, className }: SkillsProps) {
+  const t = useTranslations();
+
   return (
     <Section className={className}>
       <h2 className="text-xl font-bold" id="skills-section">
-        Skills
+        {t.sections.skills}
       </h2>
-      <SkillsList skills={skills} aria-labelledby="skills-section" />
+      <SkillsList skills={skills} />
     </Section>
   );
 }

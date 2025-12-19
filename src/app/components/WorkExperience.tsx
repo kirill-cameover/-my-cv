@@ -1,11 +1,14 @@
+"use client";
+
 import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
-import type { RESUME_DATA } from "@/data/resume-data";
+import { useTranslations } from "@/i18n/useTranslations";
+import type { ResumeData } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
-type WorkExperience = (typeof RESUME_DATA)["work"][number];
+type WorkExperience = ResumeData["work"][number];
 type WorkBadges = readonly string[];
 
 interface BadgeListProps {
@@ -54,12 +57,15 @@ function WorkPeriod({
   start,
   end,
 }: WorkPeriodProps) {
+  const t = useTranslations();
+  const presentText = t.common.present;
+
   return (
     <div
       className="text-sm tabular-nums text-gray-500"
-      title={`Employment period: ${start} to ${end ?? "Present"}`}
+      title={`Employment period: ${start} to ${end ?? presentText}`}
     >
-      {start} - {end ?? "Present"}
+      {start} - {end ?? presentText}
     </div>
   );
 }
@@ -137,7 +143,7 @@ function WorkExperienceItem({
 }
 
 interface WorkExperienceProps {
-  work: (typeof RESUME_DATA)["work"];
+  work: ResumeData["work"];
 }
 
 /**
@@ -147,10 +153,12 @@ interface WorkExperienceProps {
 export function WorkExperience({
   work,
 }: WorkExperienceProps) {
+  const t = useTranslations();
+
   return (
     <Section>
       <h2 className="text-xl font-bold" id="work-experience">
-        Work Experience
+        {t.sections.work}
       </h2>
       <div
         className="space-y-4 print:space-y-0"

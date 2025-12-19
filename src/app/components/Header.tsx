@@ -1,12 +1,14 @@
+"use client";
+
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
-import Image, { type StaticImageData } from "next/image";
 import React from "react";
 import { Avatar } from "@/components/avatar";
 import { Button } from "@/components/ui/button";
 import { GitHubIcon, LinkedInIcon, TelegramIcon } from "@/components/icons";
 import { XIcon } from "@/components/icons/x-icon";
-import { RESUME_DATA } from "@/data/resume-data";
-import type { ResumeIcon, IconType } from "@/lib/types";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { useResumeData } from "@/data/useResumeData";
+import type { IconType } from "@/lib/types";
 
 // Type-safe icon mapping
 const ICON_MAP: Record<IconType, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
@@ -20,8 +22,8 @@ const ICON_MAP: Record<IconType, React.ComponentType<React.SVGProps<SVGSVGElemen
 } as const;
 
 interface LocationLinkProps {
-  location: typeof RESUME_DATA.location;
-  locationLink: typeof RESUME_DATA.locationLink;
+  location: string;
+  locationLink: string;
 }
 
 function LocationLink({
@@ -72,7 +74,15 @@ function SocialButton({
 }
 
 interface ContactButtonsProps {
-  contact: typeof RESUME_DATA.contact;
+  contact: {
+    email: string;
+    tel: string;
+    social: Array<{
+      name: string;
+      url: string;
+      icon: IconType;
+    }>;
+  };
   personalWebsiteUrl?: string;
 }
 
@@ -126,7 +136,15 @@ function ContactButtons({
 }
 
 interface PrintContactProps {
-  contact: typeof RESUME_DATA.contact;
+  contact: {
+    email: string;
+    tel: string;
+    social: Array<{
+      name: string;
+      url: string;
+      icon: IconType;
+    }>;
+  };
   personalWebsiteUrl?: string;
 }
 
@@ -174,37 +192,46 @@ function PrintContact({
  * Header component displaying personal information and contact details
  */
 export function Header() {
+  const resumeData = useResumeData();
+
   return (
     <header className="flex items-center justify-between">
       <div className="flex-1 space-y-1.5">
-        <h1 className="text-2xl font-bold" id="resume-name">
-          {RESUME_DATA.name}
-        </h1>
-        <p className="max-w-md text-pretty font-mono text-sm text-foreground/80 print:text-[12px]">
-          {RESUME_DATA.about}
-        </p>
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex-1">
+            <h1 className="text-2xl font-bold" id="resume-name">
+              {resumeData.name}
+            </h1>
+            <p className="max-w-md text-pretty font-mono text-sm text-foreground/80 print:text-[12px]">
+              {resumeData.about}
+            </p>
+          </div>
+          <div className="print:hidden">
+            <LanguageSwitcher />
+          </div>
+        </div>
 
         <LocationLink
-          location={RESUME_DATA.location}
-          locationLink={RESUME_DATA.locationLink}
+          location={resumeData.location}
+          locationLink={resumeData.locationLink}
         />
 
         <ContactButtons
-          contact={RESUME_DATA.contact}
-          personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
+          contact={resumeData.contact}
+          personalWebsiteUrl={resumeData.personalWebsiteUrl}
         />
 
         <PrintContact
-          contact={RESUME_DATA.contact}
-          personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
+          contact={resumeData.contact}
+          personalWebsiteUrl={resumeData.personalWebsiteUrl}
         />
       </div>
 
       <Avatar
         className="size-28"
-        src={RESUME_DATA.avatarUrl}
-        alt={`${RESUME_DATA.name}'s profile picture`}
-        fallback={RESUME_DATA.initials}
+        src={resumeData.avatarUrl}
+        alt={`${resumeData.name}'s profile picture`}
+        fallback={resumeData.initials}
       />
     </header>
   );
