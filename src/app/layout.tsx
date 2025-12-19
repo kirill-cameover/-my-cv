@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "ru_RU",
     url: RESUME_DATA.personalWebsiteUrl,
     siteName: `${RESUME_DATA.name}'s CV`,
     title: `${RESUME_DATA.name} - ${RESUME_DATA.about}`,
