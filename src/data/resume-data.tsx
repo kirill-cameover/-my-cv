@@ -4,6 +4,7 @@ export const RESUME_DATA: ResumeData = {
   name: "Kirill Cholak",
   initials: "KC",
   location: "UTC+3",
+  locationLink: "https://www.google.com/maps/place/Saint-Petersburg",
   about: "Опытный менеджер с более чем 5-летним опытом в управлении продажах и развитии бизнеса.",
   summary: (
     <>
