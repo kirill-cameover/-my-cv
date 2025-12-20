@@ -1,6 +1,5 @@
 "use client";
 
-import { GlobeIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/i18n/LanguageProvider";
 import { locales, type Locale } from "@/i18n/types";
@@ -24,15 +23,11 @@ export function LanguageSwitcher() {
       variant="outline"
       size="icon"
       onClick={switchLanguage}
-      className="relative size-8"
+      className="size-8 font-semibold"
       aria-label={`Switch language. Current: ${localeLabels[locale]}`}
       title={`Switch language. Current: ${localeLabels[locale]}`}
     >
-      <GlobeIcon className="size-4" aria-hidden="true" />
-      <span className="sr-only">{localeLabels[locale]}</span>
-      <span className="absolute bottom-0.5 right-0.5 text-[9px] font-semibold leading-none text-foreground/60">
-        {localeLabels[locale]}
-      </span>
+      {localeLabels[locale]}
     </Button>
   );
 }

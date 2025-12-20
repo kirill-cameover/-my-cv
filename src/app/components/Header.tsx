@@ -197,19 +197,17 @@ export function Header() {
   return (
     <header className="flex items-center justify-between">
       <div className="flex-1 space-y-1.5">
-        <div className="flex items-start justify-between gap-4">
-          <div className="flex-1">
-            <h1 className="text-2xl font-bold" id="resume-name">
-              {resumeData.name}
-            </h1>
-            <p className="max-w-md text-pretty font-mono text-sm text-foreground/80 print:text-[12px]">
-              {resumeData.about}
-            </p>
-          </div>
+        <div className="flex items-center gap-3">
+          <h1 className="text-2xl font-bold" id="resume-name">
+            {resumeData.name}
+          </h1>
           <div className="print:hidden">
             <LanguageSwitcher />
           </div>
         </div>
+        <p className="max-w-md text-pretty font-mono text-sm text-foreground/80 print:text-[12px]">
+          {resumeData.about}
+        </p>
 
         <LocationLink
           location={resumeData.location}
