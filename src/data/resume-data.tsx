@@ -3,8 +3,7 @@ import type { ResumeData } from "@/lib/types";
 export const RESUME_DATA: ResumeData = {
   name: "Kirill Cholak",
   initials: "KC",
-  location: "Saint-Petersburg, Russia, UTC+3",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  location: "UTC+3",
   about: "Опытный менеджер с более чем 5-летним опытом в управлении продажах и развитии бизнеса.",
   summary: (
     <>
@@ -15,9 +14,9 @@ export const RESUME_DATA: ResumeData = {
     </>
   ),
   avatarUrl: "https://avatars.githubusercontent.com/u/98087190?s=400&u=0fd5cc113146cf9090cabbd21952ac6c64d8df7d&v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  personalWebsiteUrl: "https://kirill-cameover.github.io/blog/",
   contact: {
-    email: "kirill.cholak@gmail.com",
+    email: "kiril.ciolac@gmail.com",
     tel: "+79500031429",
     social: [
       {

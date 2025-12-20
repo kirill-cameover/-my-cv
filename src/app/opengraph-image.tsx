@@ -3,7 +3,7 @@ import { RESUME_DATA } from "../data/resume-data";
 
 export const runtime = "edge";
 
-export const alt = "Minimalist Resume";
+export const alt = "Kirill Cholak CV";
 export const size = {
   width: 1200,
   height: 630,
