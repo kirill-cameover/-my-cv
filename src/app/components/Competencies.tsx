@@ -17,17 +17,19 @@ interface CompetencyColumnProps {
  */
 function CompetencyColumn({ competency }: CompetencyColumnProps) {
   return (
-    <Card className="flex h-full flex-col">
-      <CardHeader className="pb-3">
-        <CardTitle className="text-base font-semibold print:text-sm">
-          {competency.title}
-        </CardTitle>
+    <Card className="flex h-full flex-col overflow-hidden border p-3 bg-gradient-to-br from-background to-muted/20">
+      <CardHeader>
+        <div className="space-y-1">
+          <CardTitle className="text-base">
+            {competency.title}
+          </CardTitle>
+        </div>
       </CardHeader>
-      <CardContent className="flex-1">
-        <ul className="space-y-2 font-mono text-sm text-foreground/80 print:space-y-1 print:text-[11px]">
+      <CardContent className="mt-auto">
+        <ul className="space-y-1.5 font-mono text-xs text-muted-foreground print:space-y-1 print:text-[10px]">
           {competency.items.map((item, index) => (
-            <li key={index} className="flex items-start">
-              <span className="mr-2 text-foreground/60" aria-hidden="true">
+            <li key={index} className="flex items-start text-pretty">
+              <span className="mr-2 mt-0.5 text-muted-foreground/60 shrink-0" aria-hidden="true">
                 •
               </span>
               <span className="flex-1">{item}</span>
@@ -64,7 +66,7 @@ export function Competencies({
         {t.sections.competencies}
       </h2>
       <div
-        className="grid grid-cols-1 gap-4 md:grid-cols-3 print:grid-cols-3 print:gap-3"
+        className="-mx-3 grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 print:grid-cols-3 print:gap-2"
         role="feed"
         aria-labelledby="competencies-section"
       >

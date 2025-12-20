@@ -32,6 +32,14 @@ export function ResumeContent() {
             <Summary summary={resumeData.summary} />
           </Suspense>
         </SectionErrorBoundary>
+        
+        {resumeData.competencies && (
+          <SectionErrorBoundary sectionName="Competencies">
+            <Suspense fallback={<SectionSkeleton lines={4} />}>
+              <Competencies competencies={resumeData.competencies} />
+            </Suspense>
+          </SectionErrorBoundary>
+        )}
 
         <SectionErrorBoundary sectionName="Work Experience">
           <Suspense fallback={<SectionSkeleton lines={6} />}>
@@ -50,14 +58,6 @@ export function ResumeContent() {
             <Skills skills={resumeData.skills} />
           </Suspense>
         </SectionErrorBoundary>
-
-        {resumeData.competencies && (
-          <SectionErrorBoundary sectionName="Competencies">
-            <Suspense fallback={<SectionSkeleton lines={4} />}>
-              <Competencies competencies={resumeData.competencies} />
-            </Suspense>
-          </SectionErrorBoundary>
-        )}
 
         <SectionErrorBoundary sectionName="Projects">
           <Suspense fallback={<SectionSkeleton lines={5} />}>
