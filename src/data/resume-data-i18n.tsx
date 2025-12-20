@@ -5,7 +5,8 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
   ru: {
     name: "Кирилл Чолак",
     initials: "КЧ",
-    location: "UTC+3",
+    location: "Saint-Petersburg, Russia, UTC+3",
+    locationLink: "https://www.google.com/maps/place/Saint-Petersburg",
     about:
       "Опытный менеджер с более чем 5-летним опытом в управлении продажажми и развитии бизнеса.",
     summary: (
