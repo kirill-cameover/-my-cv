@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { SectionErrorBoundary } from "@/components/section-error-boundary";
 import { SectionSkeleton } from "@/components/section-skeleton";
 import { useResumeData } from "@/data/useResumeData";
+import { Competencies } from "./Competencies";
 import { Education } from "./Education";
 import { Header } from "./Header";
 import { Projects } from "./Projects";
@@ -49,6 +50,14 @@ export function ResumeContent() {
             <Skills skills={resumeData.skills} />
           </Suspense>
         </SectionErrorBoundary>
+
+        {resumeData.competencies && (
+          <SectionErrorBoundary sectionName="Competencies">
+            <Suspense fallback={<SectionSkeleton lines={4} />}>
+              <Competencies competencies={resumeData.competencies} />
+            </Suspense>
+          </SectionErrorBoundary>
+        )}
 
         <SectionErrorBoundary sectionName="Projects">
           <Suspense fallback={<SectionSkeleton lines={5} />}>

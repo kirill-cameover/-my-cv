@@ -203,6 +203,35 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
       "Качественные и количественные исследования",
       "Бизнес процессы ISO стандарт",
     ],
+    competencies: [
+      {
+        title: "Стратегия и рост",
+        items: [
+          "Go-to-Market с учётом регуляторики и медиа-ландшафта",
+          "Performance-маркетинг: поиск product-channel fit, масштабирование",
+          "Партнёрский маркетинг: CPA / RevShare / Hybrid",
+          "SEO, ASO, SERM, PR, KOL/YouTube-интеграции",
+        ],
+      },
+      {
+        title: "Продукт и аналитика",
+        items: [
+          "Сквозная аналитика: GA4, Яндекс.Метрика, AppsFlyer, Adjust",
+          "Метрики: DAU/MAU, LTV, ROI/ROMI, Churn, ARPU/ARPPU",
+          "Unit-экономика, А/В-тесты, Retention-стратегии",
+          "Автоматизация: email/EDM, CRM, onboarding-воронки",
+        ],
+      },
+      {
+        title: "Инструменты",
+        items: [
+          "Яндекс.Директ, VK Ads, Google Ads, Meta/FB, LinkedIn Ads, OEM/In-App",
+          "Content-Ops: продакшн креативов, локализация, ToV",
+          "Управление командами, бюджетирование, кросс-функциональная работа",
+          "Рынки: Россия, СНГ и международные запуски",
+        ],
+      },
+    ],
     projects: [
       {
         title: "Monito",
@@ -440,6 +469,35 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
       "Коммуникация",
       "Качественные и количественные исследования",
       "Бизнес процессы ISO стандарт",
+    ],
+    competencies: [
+      {
+        title: "Strategy and Growth",
+        items: [
+          "Go-to-Market considering regulatory and media landscape",
+          "Performance marketing: finding product-channel fit, scaling",
+          "Affiliate marketing: CPA / RevShare / Hybrid",
+          "SEO, ASO, SERM, PR, KOL/YouTube integrations",
+        ],
+      },
+      {
+        title: "Product and Analytics",
+        items: [
+          "End-to-end analytics: GA4, Yandex.Metrica, AppsFlyer, Adjust",
+          "Metrics: DAU/MAU, LTV, ROI/ROMI, Churn, ARPU/ARPPU",
+          "Unit economics, A/B tests, Retention strategies",
+          "Automation: email/EDM, CRM, onboarding funnels",
+        ],
+      },
+      {
+        title: "Tools",
+        items: [
+          "Yandex.Direct, VK Ads, Google Ads, Meta/FB, LinkedIn Ads, OEM/In-App",
+          "Content-Ops: creative production, localization, ToV",
+          "Team management, budgeting, cross-functional work",
+          "Markets: Russia, CIS and international launches",
+        ],
+      },
     ],
     projects: [
       {

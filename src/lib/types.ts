@@ -38,6 +38,10 @@ export interface ResumeData {
     description: string | React.ReactNode;
   }>;
   skills: string[];
+  competencies?: Array<{
+    title: string;
+    items: string[];
+  }>;
   projects: Array<{
     title: string;
     techStack: string[];

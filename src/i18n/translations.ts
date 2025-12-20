@@ -6,6 +6,7 @@ export interface Translations {
     work: string;
     education: string;
     skills: string;
+    competencies: string;
     projects: string;
   };
   common: {
@@ -24,6 +25,7 @@ export const translations: Record<Locale, Translations> = {
       work: "Опыт работы",
       education: "Образование",
       skills: "Навыки",
+      competencies: "Сильные стороны и компетенции",
       projects: "Проекты",
     },
     common: {
@@ -40,6 +42,7 @@ export const translations: Record<Locale, Translations> = {
       work: "Work Experience",
       education: "Education",
       skills: "Skills",
+      competencies: "Strengths and Competencies",
       projects: "Projects",
     },
     common: {
