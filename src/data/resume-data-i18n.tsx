@@ -3,12 +3,11 @@ import type { ResumeData } from "@/lib/types";
 
 export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
   ru: {
-    name: "Kirill Cholak",
-    initials: "KC",
-    location: "Санкт-Петербург, Россия, UTC+3",
-    locationLink: "https://www.google.com/maps/place/Saint-Petersburg",
+    name: "Кирилл Чолак",
+    initials: "КЧ",
+    location: "UTC+3",
     about:
-      "Опытный менеджер с более чем 5-летним опытом в управлении продажах и развитии бизнеса.",
+      "Опытный менеджер с более чем 5-летним опытом в управлении продажажми и развитии бизнеса.",
     summary: (
       <>
         Менеджер #1 YouTube подкаста про Крипту, продажи продуктов, общение и
@@ -41,11 +40,11 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
     },
     education: [
       {
-        school: "Wrocław University of Technology",
+        school: "Высшая школа экономики, Санкт-Петербург",
         degree:
-          "Бакалавр систем управления и робототехники",
-        start: "2007",
-        end: "2010",
+          "Бакалавр, Социология и Социальная информатика",
+        start: "2019",
+        end: "2023",
       },
     ],
     work: [
@@ -189,17 +188,19 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
       },
     ],
     skills: [
-      "React/Next.js/Remix",
-      "TypeScript",
-      "Tailwind CSS",
+      "Python",
+      "Figma",
+      "Trello",
       "Design Systems",
-      "WebRTC",
-      "WebSockets",
-      "Node.js",
-      "GraphQL",
-      "Relay",
-      "Системная архитектура",
-      "Управление удаленными командами",
+      "Jira",
+      "HubSpot",
+      "Tableau",
+      "Exсel&Google Sheets (на продвинутом уровне)",
+      "Качественные и количественные исследования",
+      "Аналитика и Метрики",
+      "Коммуникация",
+      "Качественные и количественные исследования",
+      "Бизнес процессы ISO стандарт",
     ],
     projects: [
       {
@@ -425,17 +426,19 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
       },
     ],
     skills: [
-      "React/Next.js/Remix",
-      "TypeScript",
-      "Tailwind CSS",
+      "Python",
+      "Figma",
+      "Trello",
       "Design Systems",
-      "WebRTC",
-      "WebSockets",
-      "Node.js",
-      "GraphQL",
-      "Relay",
-      "System Architecture",
-      "Remote Team Leadership",
+      "Jira",
+      "HubSpot",
+      "Tableau",
+      "Exсel&Google Sheets (на продвинутом уровне)",
+      "Качественные и количественные исследования",
+      "Аналитика и Метрики",
+      "Коммуникация",
+      "Качественные и количественные исследования",
+      "Бизнес процессы ISO стандарт",
     ],
     projects: [
       {
