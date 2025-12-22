@@ -8,21 +8,12 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
     location: "Saint-Petersburg, Russia, UTC+3",
     locationLink: "https://www.google.com/maps/place/Saint-Petersburg",
     about:
-      "Опытный менеджер с более чем 5-летним опытом в управлении продажажми и развитии бизнеса.",
+      "BizDev, Sales, Project manager. Фанат технологий.",
     summary: (
       <>
-        Менеджер #1 YouTube подкаста про Крипту, продажи продуктов, общение и
-        приглашение с лучшими гостями. Управлял магазином кальянов в Москве,
-        увеличил оборот с 350 тыс. руб. до 900 тыс. руб. за 3 месяца и поднял
-        рейтинг на Yandex Картах до 5.0. Создал магазин на Ozon, снимал рилсы и
-        вел Instagram. Был продюсером шоу на YouTube в{" "}
-        <a href="http://tuk.md/" target="_blank" rel="noopener noreferrer">
-          tuk.md
-        </a>
-        , разработал проект, выиграл грант и выпустил 13 эпизодов. Как менеджер
-        коммерческого отдела в Еврейском культурном центре, организовал 8
-        коммерческих мероприятий, открыл 3 образовательных студий, внедрил
-        систему управления на Notion, снимал и создавал посты для продвижения.
+        Специалист в продажах и развития бизнеса с опытом закрытия B2B-сделок от $50K, построения партнёрств и масштабирования офлайн и digital-каналов продаж. 
+        Сильные хард скиллы в CRM-системах, автоматизации процессов и стратегическом планировании. Активно интегрирован в Web3-индустрию: рабочие контакты с Tier-1 проектами и развитая сеть KOLs.
+        Люблю технологии, активно использую AI-инструменты в работе.
       </>
     ),
     avatarUrl:
@@ -50,11 +41,11 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
     ],
     work: [
       {
-        company: "Motion",
+        company: "Хедлайнеры",
         link: "https://motionapp.com/",
-        badges: ["Remote", "AI", "React", "Next.js", "TypeScript", "AdonisJS"],
-        title: "Senior Software Engineer",
-        start: "2025",
+        badges: ["B2B продажи", "КП", "Фин. модели", "Аналитика", "Figma", "Конференции"],
+        title: "BizDev, Sales Manager",
+        start: "2024",
         end: null,
         description: (
           <>
@@ -280,7 +271,7 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
     location: "Saint-Petersburg, Russia, UTC+3",
     locationLink: "https://www.google.com/maps/place/Saint-Petersburg",
     about:
-      "Experienced manager with over 5 years of experience in sales management and business development.",
+      "BizDev, Sales, Project manager. Фанат технологий.",
     summary: (
       <>
         Manager #1 of a YouTube podcast about Crypto, product sales,
@@ -472,16 +463,16 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
     ],
     competencies: [
       {
-        title: "Strategy and Growth",
+        title: "Business Development",
         items: [
-          "Go-to-Market considering regulatory and media landscape",
-          "Performance marketing: finding product-channel fit, scaling",
-          "Affiliate marketing: CPA / RevShare / Hybrid",
-          "SEO, ASO, SERM, PR, KOL/YouTube integrations",
+          "Market Analysis/Competitive Analysis",
+          "Lead Generation/Strategic Partnerships",
+          "Proposal Writing/Client Acquisition",
+          "SEO, PR, KOL/YouTube integrations",
         ],
       },
       {
-        title: "Product and Analytics",
+        title: "Product and Sales",
         items: [
           "End-to-end analytics: GA4, Yandex.Metrica, AppsFlyer, Adjust",
           "Metrics: DAU/MAU, LTV, ROI/ROMI, Churn, ARPU/ARPPU",
