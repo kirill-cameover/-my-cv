@@ -8,21 +8,28 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
     location: "Saint-Petersburg, Russia, UTC+3",
     locationLink: "https://www.google.com/maps/place/Saint-Petersburg",
     about:
-      "Middle BizDev, Sales, Project manager. Фанат технологий.",
+      "Middle BizDev, Sales, Project manager Фанат технологий",
     summary: (
       <>
         <p>
-        <b>Вкратце: более 5 лет в продажах и развитии бизнеса - 2 года B2B-продаж и привлечении партнёров в Web3 и медиа-индустрии,
-        с полным циклом: от холодного outreach до закрытия сделок и аккаунт-менеджмента.</b>
+        <b>Вкратце: более 5 лет в продажах и развитии бизнеса.</b>
         </p>
+
+        <p>
+          2 года B2B-продаж и привлечении партнёров в Web3 и медиа-индустрии,
+          с полным циклом: от холодного outreach до закрытия сделок и аккаунт-менеджмента. 
+        </p>
+
         <p>
         Активный нетворкинг на отраслевых ивентах (Blockchain Life Msk/Dubai, TradeID, 0xConnect, Crypto Summit & others).
         Рабочие контакты с Tier-1 проектами и развитая сеть KOL's.
         </p>
+
         <p>
         BizDev-зона — бенчмаркинг, анализ рынка, создание маркетинговых материалов.
         Вёл переговоры(300+ встреч), участвовал в risk-оценке, документооборот, фин-модель сотрудничества.
         </p>
+
         <p>
         Сильные хард скиллы в CRM-системах, автоматизации процессов и стратегическом планировании.
         Люблю технологии, активно использую AI-инструменты в работе.
@@ -97,73 +104,70 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
         ),
       },
       {
-        company: "Film.io",
-        link: "https://film.io",
-        badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-        title: "Software Architect",
+        company: "Kedem.md",
+        link: "https://kedem.md",
+        badges: ["Управление командой", "Продажи", "Масштабирование"],
+        title: "Руководитель коммереского отдела",
         start: "2024",
-        end: "2025",
-        description: (
-          <>
-            Руководство технической архитектурой платформы финансирования
-            фильмов на основе блокчейна.
-            <ul className="list-inside list-disc">
-              <li>
-                Архитектура миграции с CRA на Next.js для улучшения
-                производительности, SEO и DX
-              </li>
-              <li>
-                Установлен процесс релизов, обеспечивающий более быстрые
-                развертывания и надежные откаты
-              </li>
-              <li>
-                Внедрение мониторинга всей системы и улучшений безопасности
-              </li>
-            </ul>
-          </>
-        ),
-      },
-      {
-        company: "Parabol",
-        link: "https://parabol.co",
-        badges: [
-          "Remote",
-          "React",
-          "TypeScript",
-          "Node.js",
-          "GraphQL",
-          "Tailwind CSS",
-        ],
-        title: "Senior Full Stack Developer",
-        start: "2021",
         end: "2024",
         description: (
           <>
-            Старший разработчик и лидер команды для корпоративной платформы
-            agile встреч.
+            Руководство коммереского отдела Еврейского культурного центра. 
+            Создание и организация обучающих детских и взролсых групп. 
             <ul className="list-inside list-disc">
               <li>
-                Построил дизайн-систему с Tailwind CSS, улучшив скорость
-                разработки и время выхода на рынок
+                Создание 8 детских групп по обучению: англ; шахматы; танцы и т.д.
               </li>
               <li>
-                Внедрил инженерные практики: автоматизация PR, руководящие
-                принципы code review и рабочие процессы
+                Создан процесс онбординга преподавателей и отцифорована система учёта и бонусов
               </li>
               <li>
-                Вклад в open source: Relay DevTools и инструменты React i18n
+                Внедрение системы продаж, через онлайн и оффлайн каналы. Увеличение прибыли на 60% за 6 месяцев
+              </li>
+              <li>  
+                Организация более 5 коммеречких мероприятий для взрослых
               </li>
             </ul>
           </>
         ),
       },
       {
-        company: "Clevertech",
+        company: "Tuk.md",
+        link: "https://tuk.md",
+        badges: [
+          "Подкастинг",
+          "Продюсирование",
+          "Защита проекта",
+          "Davinci Resolve",
+          "Гранты",
+        ],
+        title: "Продюсер YouTube шоу",
+        start: "2024",
+        end: "2024",
+        description: (
+          <>
+            Проект на 6 месяцев по продюсированию YouTube шоу по медиаграммотности
+            <ul className="list-inside list-disc">
+              <li>
+                Написал проект и выиграл финансирование на создание шоу 30.000$
+              </li>
+              <li>
+                Внедрил автоматизацию PR(короткие видео ), рабочих процессов
+              </li>
+              <li>
+                Выпустил 16 серий на YouTube. Прошёл курсы по видео монтажу и подкастингу и выпустил 3 личных серии 
+              </li>
+            </ul>
+          </>
+        ),
+      },
+      {
+        company: "Магазин кальянов",
         link: "https://clevertech.biz",
-        badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-        title: "Lead Android Developer → Full Stack Developer",
-        start: "2015",
-        end: "2021",
+        badges: ["Фин. модель", "Продажи", "Сеть партнёрств"],
+        title: "Co-founder, управляющий магазина",
+        start: "2021",
+        end: "2023",
         description: (
           <>
             Успешно перешел с мобильной разработки на full-stack, управляя
@@ -185,40 +189,6 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
             </ul>
           </>
         ),
-      },
-      {
-        company: "Jojo Mobile",
-        link: "https://bsgroup.eu/",
-        badges: ["On Site", "Android", "Java", "Kotlin"],
-        title: "Android Developer → Lead Android Developer",
-        start: "2012",
-        end: "2015",
-        description: (
-          <>
-            Первый Android разработчик, вырос и возглавил команду из 15+
-            инженеров, установив инженерную культуру.
-            <ul className="list-inside list-disc">
-              <li>
-                Разработал приложения для крупных польских компаний, включая
-                LOT, Polskie Radio и Agora
-              </li>
-              <li>
-                Построил и наставлял высокопроизводительную команду мобильной
-                разработки
-              </li>
-            </ul>
-          </>
-        ),
-      },
-      {
-        company: "Nokia Siemens Networks",
-        link: "https://www.nokia.com",
-        badges: ["On Site", "C/C++", "LTE", "Agile"],
-        title: "C/C++ Developer",
-        start: "2010",
-        end: "2012",
-        description:
-          "Разрабатывал программное обеспечение для LTE базовых станций в корпоративном масштабе, получил прочные основы в архитектуре программного обеспечения, практиках тестирования и межкомандном сотрудничестве.",
       },
     ],
     skills: [
