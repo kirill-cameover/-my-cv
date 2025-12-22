@@ -12,12 +12,12 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
     summary: (
       <>
         <p>
-        Вкратце: более 5 лет в продажах и развитии бизнеса - 2 года B2B-продаж и привлечении партнёров в Web3 и медиа-индустрии,
-        с полным циклом: от холодного outreach до закрытия сделок и аккаунт-менеджмента. 
+        <b>Вкратце: более 5 лет в продажах и развитии бизнеса - 2 года B2B-продаж и привлечении партнёров в Web3 и медиа-индустрии,
+        с полным циклом: от холодного outreach до закрытия сделок и аккаунт-менеджмента.</b>
         </p>
         <p>
         Активный нетворкинг на отраслевых ивентах (Blockchain Life Msk/Dubai, TradeID, 0xConnect, Crypto Summit & others).
-        Активно интегрирован в Web3-индустрию: рабочие контакты с Tier-1 проектами и развитая сеть KOLs.
+        Рабочие контакты с Tier-1 проектами и развитая сеть KOL's.
         </p>
         <p>
         BizDev-зона — бенчмаркинг, анализ рынка, создание маркетинговых материалов.
@@ -40,6 +40,11 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
           name: "Telegram",
           url: "https://t.me/kirillcholak",
           icon: "telegram",
+        },
+        {
+          name: "Linkedin",
+          url: "https://www.linkedin.com/in/kirill-ciolac-a356521bb/",
+          icon: "linkedin",
         },
       ],
     },
@@ -262,41 +267,35 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
     ],
     projects: [
       {
-        title: "Monito",
-        techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+        title: "Personal Website",
+        techStack: ["Obsidian", "Quartz", "Github", "TypeScript"],
         description:
-          "Расширение для браузера для отладки веб-приложений. Включает создание скриншотов, запись экрана, генерацию E2E тестов и создание отчетов об ошибках",
+          "Персональный блог, где я публикую заметки, гайды и статьи, так называймый Digital Garden",
         link: {
-          label: "monito.dev",
-          href: "https://monito.dev/",
+          label: "kirill garden",
+          href: "https://kirill-cameover.github.io/blog/",
         },
       },
       {
-        title: "Consultly",
+        title: "MediaKit Headliners",
         techStack: [
-          "TypeScript",
-          "Next.js",
-          "Vite",
-          "GraphQL",
-          "WebRTC",
-          "Tailwind CSS",
-          "PostgreSQL",
-          "Redis",
+          "Figma",
+          "Framer",
         ],
         description:
-          "Платформа для онлайн-консультаций с видеовстречами в реальном времени и планированием",
+          "Сайт MediaKit разработанный с 0 для Хедлайнеров, включая вёрстку, дизайн и контент.",
         link: {
           label: "consultly.com",
           href: "https://consultly.com/",
         },
       },
       {
-        title: "Minimalist CV",
-        techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+        title: "Personal Budget",
+        techStack: ["Google Sheets", ],
         description:
-          "Открытый минималистичный шаблон CV, удобный для печати, с фокусом на читаемость и чистый дизайн. >9k звезд на GitHub",
+          "Открытый минималистичный шаблон ведения бюджета(я пользуюсь уже более 2 лет), удобный для учёта и планирования финансов, включает в себя много фишек и автоматизаций.",
         link: {
-          label: "Minimalist CV",
+          label: "Personal Budget",
           href: "https://github.com/BartoszJarocki/cv",
         },
       },

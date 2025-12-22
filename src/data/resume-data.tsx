@@ -5,7 +5,7 @@ export const RESUME_DATA: ResumeData = {
   initials: "KC",
   location: "UTC+3",
   locationLink: "https://www.google.com/maps/place/Saint-Petersburg",
-  about: "Опытный менеджер с более чем 5-летним опытом в управлении продажах и развитии бизнеса.",
+  about: "Middle BizDev, Sales, Project manager. Фанат технологий.",
   summary: (
     <>
       Менеджер #1 YouTube подкаста про Крипту, продажи продуктов, общение и приглашение с лучшими гостями.
