@@ -22,7 +22,7 @@ export function Summary({ summary, className }: AboutProps) {
       <h2 className="text-xl font-bold" id="about-section">
         {t.sections.about}
       </h2>
-      <div className="text-pretty font-mono text-sm text-foreground/80 print:text-[12px]">
+      <div className="text-pretty font-mono text-sm text-foreground/80 print:text-[12px] [&>p+p]:mt-3 [&>p]:mb-0">
         {summary}
       </div>
     </Section>
