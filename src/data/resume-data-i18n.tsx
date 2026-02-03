@@ -53,6 +53,11 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
           url: "https://www.linkedin.com/in/kirill-ciolac-a356521bb/",
           icon: "linkedin",
         },
+        { 
+          name: "Github",
+          url: "https://github.com/kirill-cameover",
+          icon: "github"
+        },
       ],
     },
     education: [
@@ -163,28 +168,26 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
       },
       {
         company: "Магазин кальянов",
-        link: "https://clevertech.biz",
-        badges: ["Фин. модель", "Продажи", "Сеть партнёрств"],
+        link: " ",
+        badges: ["Фин. модель", "Продажи", "Сеть партнёрств", "1C", "МойСклад"],
         title: "Co-founder, управляющий магазина",
         start: "2021",
         end: "2023",
         description: (
           <>
-            Успешно перешел с мобильной разработки на full-stack, управляя
-            распределенными командами.
+            Успешно открывал небольшой бизнес в виде оффлай и онайл магазина кальянов и табака, общая выручка более 1,2млн руб.
             <ul className="list-inside list-disc">
               <li>
-                Руководил фронтенд-командой в Evercast, создавая платформу
-                реального времени, поддерживающую 30+ пользователей в комнате с
-                HD стримингом и инструментами совместной работы
+                Настройка и ведение товароучетных систем — подключение ЭДО и Честный Знак, контроль за кассовой дисциплиной.
               </li>
               <li>
-                Разработал offline-first Android приложение для DKMS, улучшив
-                процесс регистрации доноров
+                Оффлайн продажи, обучение сотрудников. Руководил командой.
               </li>
               <li>
-                Руководил командами разработки в нескольких успешных
-                клиентских проектах
+                Разработка стратегии продвижения в Instaram и Telegram.
+              </li>
+              <li>
+              Создание и управление онлайн-магазином на маркетплейсах — дизайн карточек товаров, исследование рынка, подготовка отчетов, ABC и XYZ-анализ, визуализация полученных данных.
               </li>
             </ul>
           </>
@@ -255,8 +258,8 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
         description:
           "Сайт MediaKit разработанный с 0 для Хедлайнеров, включая вёрстку, дизайн и контент.",
         link: {
-          label: "consultly.com",
-          href: "https://consultly.com/",
+          label: "Headliners",
+          href: "https://headliners.cc/",
         },
       },
       {
@@ -266,7 +269,7 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
           "Открытый минималистичный шаблон ведения бюджета(я пользуюсь уже более 2 лет), удобный для учёта и планирования финансов, включает в себя много фишек и автоматизаций.",
         link: {
           label: "Personal Budget",
-          href: "https://github.com/BartoszJarocki/cv",
+          href: "https://docs.google.com/spreadsheets/d/110ZN-OxXG4B9MuHOSbWU31niQ_yVe3p6N8mPqG9QNU0/edit?gid=743937106#gid=743937106",
         },
       },
     ],
