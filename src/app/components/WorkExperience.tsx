@@ -176,7 +176,7 @@ export function WorkExperience({
           >
             <span
               aria-hidden="true"
-              className="absolute left-3 top-9 size-3 -translate-x-1/2 rounded-full bg-zinc-500 print:hidden"
+              className="absolute left-[-1.25rem] top-9 size-3 -translate-x-1/2 rounded-full bg-zinc-500 print:hidden"
             />
             <WorkExperienceItem work={item} />
           </article>
