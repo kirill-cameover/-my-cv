@@ -161,23 +161,12 @@ export function WorkExperience({
         {t.sections.work}
       </h2>
       <div
-        className="relative space-y-4 pl-8 print:space-y-0"
+        className="space-y-4 print:space-y-0"
         role="feed"
         aria-labelledby="work-experience"
       >
-        <div
-          aria-hidden="true"
-          className="absolute bottom-2 left-2 top-2 w-px bg-muted-foreground/45"
-        />
         {work.map((item) => (
-          <article
-            key={`${item.company}-${item.start}`}
-            className="relative"
-          >
-            <span
-              aria-hidden="true"
-              className="absolute left-2 top-5 size-3 -translate-x-1/2 rounded-full border-2 border-background bg-muted-foreground"
-            />
+          <article key={`${item.company}-${item.start}`}>
             <WorkExperienceItem work={item} />
           </article>
         ))}
