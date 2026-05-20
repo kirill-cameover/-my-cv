@@ -167,7 +167,7 @@ export function WorkExperience({
       >
         <span
           aria-hidden="true"
-          className="absolute bottom-[1.875rem] left-3 top-[1.875rem] w-0.5 bg-zinc-500 print:hidden"
+          className="absolute bottom-[2.625rem] left-3 top-[2.625rem] w-0.5 bg-zinc-500 print:hidden"
         />
         {work.map((item) => (
           <article
@@ -176,7 +176,7 @@ export function WorkExperience({
           >
             <span
               aria-hidden="true"
-              className="absolute left-3 top-6 size-3 -translate-x-1/2 rounded-full bg-zinc-500 print:hidden"
+              className="absolute left-3 top-9 size-3 -translate-x-1/2 rounded-full bg-zinc-500 print:hidden"
             />
             <WorkExperienceItem work={item} />
           </article>
