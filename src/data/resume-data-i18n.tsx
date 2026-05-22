@@ -8,16 +8,22 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
     location: "Saint-Petersburg, Russia, UTC+3",
     locationLink: "https://www.google.com/maps/place/Saint-Petersburg",
     about:
-      "Middle BizDev, Sales, Project manager Фанат технологий",
+      "Sales · Partnerships · Media Production",
+    highlights: [
+      "10+ лет опыта",
+      "DAU 5–9M (соцсети)",
+      "ROMI 1.3 за 2 мес",
+      "Россия + СНГ",
+    ],
     summary: (
       <>
         <p>
-        <b>Вкратце: более 5 лет в продажах и развитии бизнеса.</b>
+        <b>Продажи → Партнёрства → Медиа. Формирую продажи и  Делаю проекты прибыльными.</b>
         </p>
 
         <p>
-          2 года B2B-продаж и привлечении партнёров в Web3 и медиа-индустрии,
-          с полным циклом: от холодного outreach до закрытия сделок и аккаунт-менеджмента. 
+        РОП и BizDev с опытом продюсирования YouTube-медиа/подкастов.  
+        Закрываю sponsorship-сделки, строю долгосрочные партнёрства, запускаю шоу под рекламодателей.
         </p>
 
         <p>
@@ -27,7 +33,7 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
 
         <p>
         BizDev-зона — бенчмаркинг, анализ рынка, создание маркетинговых материалов.
-        Вёл переговоры(300+ встреч), участвовал в risk-оценке, документооборот, фин-модель сотрудничества.
+        Вёл переговоры(500+ встреч), участвовал в risk-оценке, документооборот, фин-модель сотрудничества.
         </p>
 
         <p>
@@ -281,6 +287,12 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
     locationLink: "https://www.google.com/maps/place/Saint-Petersburg",
     about:
       "BizDev, Sales, Project manager. Фанат технологий.",
+    highlights: [
+      "10+ years experience",
+      "DAU 5–9M (social media)",
+      "ROMI 1.3 in 2 months",
+      "Russia + CIS",
+    ],
     summary: (
       <>
         Manager #1 of a YouTube podcast about Crypto, product sales,

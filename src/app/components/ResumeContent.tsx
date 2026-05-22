@@ -7,6 +7,7 @@ import { useResumeData } from "@/data/useResumeData";
 import { Competencies } from "./Competencies";
 import { Education } from "./Education";
 import { Header } from "./Header";
+import { Highlights } from "./Highlights";
 import { Projects } from "./Projects";
 import { Skills } from "./Skills";
 import { Summary } from "./Summary";
@@ -27,6 +28,14 @@ export function ResumeContent() {
       </SectionErrorBoundary>
 
       <div className="space-y-8 print:space-y-4">
+        {resumeData.highlights && resumeData.highlights.length > 0 && (
+          <SectionErrorBoundary sectionName="Highlights">
+            <Suspense fallback={<SectionSkeleton lines={1} />}>
+              <Highlights highlights={resumeData.highlights} />
+            </Suspense>
+          </SectionErrorBoundary>
+        )}
+
         <SectionErrorBoundary sectionName="Summary">
           <Suspense fallback={<SectionSkeleton lines={2} />}>
             <Summary summary={resumeData.summary} />

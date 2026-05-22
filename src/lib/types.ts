@@ -10,6 +10,7 @@ export interface ResumeData {
   location: string;
   locationLink: string;
   about: string;
+  highlights?: string[];
   summary: string | React.ReactNode;
   avatarUrl: string;
   personalWebsiteUrl: string;
@@ -107,6 +108,7 @@ export interface GraphQLMe {
   education: GraphQLEducation[];
   work: GraphQLWork[];
   skills: string[];
+  highlights?: string[];
   projects: GraphQLProject[];
 }
 
@@ -150,6 +152,7 @@ export function resumeDataToGraphQL(data: ResumeData): GraphQLMe {
       description: reactToString(job.description),
     })),
     skills: data.skills,
+    highlights: data.highlights,
     projects: data.projects.map((project) => ({
       title: project.title,
       techStack: project.techStack,

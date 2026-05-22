@@ -6,6 +6,12 @@ export const RESUME_DATA: ResumeData = {
   location: "UTC+3",
   locationLink: "https://www.google.com/maps/place/Saint-Petersburg",
   about: "Middle BizDev, Sales, Project manager. Фанат технологий.",
+  highlights: [
+    "10+ лет опыта",
+    "DAU 5–9M (соцсети)",
+    "ROMI 1.3 за 2 мес",
+    "Россия + СНГ",
+  ],
   summary: (
     <>
       Менеджер #1 YouTube подкаста про Крипту, продажи продуктов, общение и приглашение с лучшими гостями.

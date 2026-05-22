@@ -122,6 +122,9 @@ export class Me {
   @Field(() => [String])
   skills: string[];
 
+  @Field(() => [String], { nullable: true })
+  highlights?: string[];
+
   @Field(() => [Project])
   projects: Project[];
 }
