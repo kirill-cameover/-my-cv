@@ -15,6 +15,7 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
       "Нетворкинг +500 встреч",
       "80+ партнёрств",
       "Россия + СНГ",
+      "Помогаю монетизировать YouTube подкасты",
     ],
     summary: (
       <>
@@ -34,7 +35,7 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
         </p>
 
         <p>
-        <b>Глубокая экспертиза в YouTube продвижении и монетизации</b>
+        <b>Глубокая экспертиза в YouTube продвижении и монетизации.</b>
         BizDev-зона — бенчмаркинг, анализ рынка, создание маркетинговых материалов.
         Продажи и переговоры(500+ встреч), risk-оценка, документооборот, фин-модель сотрудничества.
         </p>
@@ -49,7 +50,7 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
       social: [
         {
           name: "Telegram",
-          url: "https://t.me/kirillcholak",
+          url: "https://t.me/kirillciolac",
           icon: "telegram",
         },
         {
