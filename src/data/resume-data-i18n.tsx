@@ -8,7 +8,7 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
     location: "Saint-Petersburg, Russia, UTC+3",
     locationLink: "https://www.google.com/maps/place/Saint-Petersburg",
     about:
-      "Продажи · Партнёрства · YouTube Production",
+      <b>Продажи · Партнёрства · YouTube Production</b>,
     highlights: [
       "6+ лет опыта",
       "Выручка 3М$ в год",
@@ -28,13 +28,13 @@ export const RESUME_DATA_I18N: Record<Locale, ResumeData> = {
         </p>
 
         <p>
-        <b>Организовал более 100 съёмок подкастов.</b>  
+        <b>Организовал более 100 съёмок подкастов.</b>   
         Активный нетворкинг на отраслевых ивентах (Blockchain Life, TradeID, 0xConnect, Crypto Summit & others).
         Рабочие контакты с Tier-1 проектами и развитая сеть KOL's и Агенств.
         </p>
 
         <p>
-        <b>Глубокая экспертиза в YouTube продвижении и монетизации</b>
+        <b>Глубокая экспертиза в YouTube продвижении и монетизации.</b> 
         BizDev-зона — бенчмаркинг, анализ рынка, создание маркетинговых материалов.
         Продажи и переговоры(500+ встреч), risk-оценка, документооборот, фин-модель сотрудничества.
         </p>

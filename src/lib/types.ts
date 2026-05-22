@@ -9,7 +9,7 @@ export interface ResumeData {
   initials: string;
   location: string;
   locationLink: string;
-  about: string;
+  about: string | React.ReactNode;
   highlights?: string[];
   summary: string | React.ReactNode;
   avatarUrl: string;
@@ -132,7 +132,7 @@ export function resumeDataToGraphQL(data: ResumeData): GraphQLMe {
     initials: data.initials,
     location: data.location,
     locationLink: data.locationLink,
-    about: data.about,
+    about: reactToString(data.about),
     summary: reactToString(data.summary),
     avatarUrl: data.avatarUrl,
     personalWebsiteUrl: data.personalWebsiteUrl,
